@@ -1,0 +1,571 @@
+main{
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+
+.Caractéristiques_simple{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  max-width: 1300px;
+
+}
+
+.Caractéristiques_simple ul li {
+    list-style: none;
+    font-family: "SF Pro Display Light", sans-serif;
+    max-width: 500px;
+}
+
+.h3_photo_HomePod{
+  height: 70%;
+  width: 40%;
+  margin-left: 25px;
+}
+
+h2+p {
+  font-size: 150%;
+}
+
+
+.Button_acheter{
+display: block;
+width: 120px;
+height: 32px;
+text-align: center;
+vertical-align: middle;
+background: linear-gradient(#42a1ec, #0070c9);
+border: white;
+border-radius: 4px;
+}
+.Button_acheter:hover{
+  background: linear-gradient(#0070c9, #42a1ec);
+}
+
+.Button_acheter a {
+  color: white;
+  text-decoration: none;
+  font-family: "SF Pro Display Light", sans-serif;
+}
+
+.Afficher_more a{
+  margin-left: 40px;
+}
+
+.titre_2{
+  margin-left: 30px;
+  font-size: 300%;
+}
+
+.Caractéristiques_tech{
+  padding-top: 50px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+
+.Caractéristiques_tech ul li {
+  list-style: none;
+  line-height: 25px;
+}
+
+.Caractéristiques_tech ul{
+  padding-top: 25px;
+}
+
+.ul_photo_HomePod{
+  height: 100%;
+  width: 50%;
+  margin-left: 20px;
+}
+
+video{
+  height: 600px;
+  width: 1000px;
+}
+
+div>h2{
+  font-size: 300%;
+}
+
+.img_video{
+  text-align: center;
+  width: 100%;
+}
+
+.video_div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#toggle{
+  height:auto;
+  margin:1em;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+ }
+
+#toggle p {
+  text-align:center;
+  padding:0
+}
+
+#toggle ul li {
+  list-style: none;
+}
+
+.toggle_p_1{
+width: 300px;
+line-height: 150%;
+}
+
+.toggle_p_2{
+width: 300px;
+line-height: 150%;
+}
+
+.toggle_p_3{
+  line-height: 120%;
+}
+
+.button_affichez{
+
+}
+
+.button_affichez a{
+
+}
+
+
+
+/*Responsive caractéristiques*/
+@media all and (min-width: 1281px) and (max-width: 1580px){
+
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  .h3_photo_HomePod{
+    height: 50%;
+    width: 50%;
+  }
+  .ul_photo_HomePod{
+    height: 50%;
+    width: 50%;
+  }
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+  }
+  .h3_photo_HomePod {
+    height: 50%;
+    width:50%;
+  }
+  .ul_photo_HomePod{
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1023px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+  .h3_photo_HomePod{
+    height: 50%;
+    width: 50%;
+  }
+  .ul_photo_HomePod{
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 550px) and (max-width: 799px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+
+  .h3_photo_HomePod{
+    height: 50%;
+    width: 50%;
+  }
+  .ul_photo_HomePod{
+    height: 65%;
+    width: 65%;
+  }
+
+
+@media all and (min-width: 250px) and (max-width: 549px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+
+  .h3_photo_HomePod{
+    height: 30%;
+    width: 30%;
+  }
+  .ul_photo_HomePod{
+    height: 30%;
+    width: 30%;
+  }
+}
+
+@media all and (min-width: 1px) and (max-width: 249px) {
+  .Caractéristiques_simple{
+    display: flex;
+    flex-direction: column;
+  }
+  .Caractéristiques_tech{
+    display: flex;
+    flex-direction: column;
+    height: 150%;
+  }
+  .img_video{
+    display: flex;
+    flex-direction: column;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+  }
+
+  .h3_photo_HomePod{
+    height: 60%;
+    width: 60%;
+  }
+  .ul_photo_HomePod{
+    height: 60%;
+    width: 60%;
+
+  }
+}
+
+/* 1menu submenu */
+footer
+{
+  height: 4000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.footer_info
+{
+  width: 50%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer_info  li
+{
+  display: inline;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px 10px 2px 10px;
+}
+
+.footer_info  li li
+{
+  display: block;
+}
+
+.footer_info img
+{
+  height: 50px;
+  width: 50px;
+  margin-left: 50px;
+}
+
+.footer_info ul
+{
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer_info ul ul
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_info ul li li:first-child
+{
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.footer_info a
+{
+  text-decoration: none;
+  color: blue;
+}
+
+/* fin 1menue submenue */
+.informations
+{
+  height: 40px;
+  border-bottom: solid 1px;
+  font-size: 12px;
+}
+
+/* 2menu submenu */
+.information_Part2
+{
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+.information_Part2 li
+{
+  list-style: none;
+  width: 200px;
+  padding-top: 25px;
+  font-size: 16px;
+}
+
+.information_Part2  li li
+{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.information_Part2 ul
+{
+  display: flex;
+  padding: 0px;
+}
+
+.information_Part2 ul ul
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.information_Part2 a
+{
+  text-decoration: none;
+  color: grey;
+}
+
+/* responsive /!\ */
+@media screen and (min-width: 0px) and (max-width: 1460px)
+{
+  .footer_info
+  {
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 400px 0px 250px 0px;
+  }
+
+  .footer_info ul
+  {
+    display: block;
+    padding: 0;
+  }
+
+  .footer_info li
+  {
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .footer_info img
+  {
+    height: 50px;
+    width: 50px;
+    margin-left: 0px;
+  }
+
+  .informations
+  {
+    width: 400px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    border: solid 0px;
+  }
+
+
+@media screen and (min-width: 0px) and (max-width: 830px)
+{
+  footer
+  {
+    height: 2200px;
+  }
+
+  .footer_info
+  {
+    height: 800px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .information_Part2
+  {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 0px 0px px 0px;
+  }
+
+  .information_Part2  li
+  {
+    list-style: none;
+    width: 300px;
+    padding-top: 25px;
+    font-size: 18px;
+  }
+
+  .information_Part2 ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+
+  .informations
+  {
+    text-align: center;
+    font-size: 12px;
+    border: solid 0px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px)
+{
+  .informations
+  {
+    padding-top: 400px;
+    padding-bottom: 300px;
+    width: 200px;
+  }
+
+  .information_Part2
+  {
+    margin-top: 240px;
+  }
+
+  .information_Part2 ul
+  {
+    padding-bottom: 30px;
+  }
+
+  .footer_info
+  {
+    margin-top: 400px;
+  }
+
+  /* RESPONSIVE DU BODY */
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px)
+{
+  .informations
+  {
+    padding-top: 0px;
+    background-color: red;
+  }
+
+}

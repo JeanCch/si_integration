@@ -1,0 +1,665 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: "SF Pro Display Light", sans-serif;
+  font-size:16px;
+  color:#444;
+
+}
+
+.navigation{
+  background: rgba(45,45,45,0.98);
+  max-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+
+.ul_menu_separation{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Sous_Logo_Apple{
+width: 18%;
+}
+
+.Logo_Apple{
+  display: flex;
+  justify-content: flex-end;
+  width: 43%;
+}
+
+ li a img{
+  height: 25px;
+  width: 20px;
+}
+.fixtop{
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+/* Mise en forme */
+}
+
+#Barre_achat{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  border-bottom: 1px solid black;
+  background: rgba(255, 255, 255,0.6);
+  width: 1250px;
+
+}
+
+.Logo{
+  margin-right: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.navigation ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.navigation ul li{
+  padding: 0px 50px 0px 50px
+}
+
+.navigation a{
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+  font-family: "SF Pro Display Light", sans-serif;
+}
+
+.navigation a:hover{
+  color: grey;
+}
+
+.navigation h1{
+    font-size: 20px;
+    color: white;
+    transition: 1s;
+    background:white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+/* FIN Du Header */
+
+footer{
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+  /* 1menu submenu */
+.footer_info {
+  width: 50%;
+  height: 260px;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top : 60px;
+}
+
+.footer_info  li {
+  display: inline;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8px 10px 2px 10px;
+}
+
+.footer_info  li li{
+  display: block;
+}
+
+.footer_info img{
+  height: 50px;
+  width: 50px;
+  margin-left: 45px;
+}
+
+.footer_info ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer_info ul ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_info ul li li:first-child{
+  font-weight: bold;
+  font-size: 19px;
+}
+.footer_info a{
+  text-decoration: none;
+  color: blue;
+}
+/* fin 1menue submenue */
+
+.informations{
+  height: 40px;
+  border-bottom: solid 1px;
+  font-size: 12px;
+}
+
+/* 2menu submenu */
+
+
+.information_Part2 {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+}
+.information_Part2  li {
+  list-style: none;
+  width: 200px;
+  padding-top: 25px;
+  font-size: 16px;
+
+
+}
+.information_Part2  li li{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+.information_Part2 ul{
+  display: flex;
+  padding: 0px;
+}
+.information_Part2 ul ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.information_Part2 a{
+  text-decoration: none;
+  color: grey;
+}
+
+#menu_hidden{   /*Classe indispensable pour le menu responsive*/
+  visibility: hidden;
+  height: 1%;
+  width: 1%;
+}
+
+/* RESPONSIVE DU HEADER *//*PENSER A METTRE CLASSE AU DESSUS DANS VOTRE CODE*/
+@media all and (min-width: 1281px) and (max-width: 1580px){
+  #Barre_achat{
+    width: 1000px;
+  }
+}
+
+@media all and (min-width: 800px) and (max-width: 1280px) {
+#Barre_achat{
+  width: 700px;
+  }
+  .shop_bag{
+    visibility: hidden;
+  }
+}
+
+@media all and (min-width: 550px) and (max-width: 799px) {
+#Barre_achat{
+  width: 500px;
+}
+  .menu_visible{
+    visibility: hidden;
+  }
+
+  #menu_hidden{
+    visibility: visible;
+  }
+
+  a  {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  a:hover
+  {
+    color: grey;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(45,45,45,0.98);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* pour arrêter le scintillement en safari*/
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+#menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Logo_Apple{
+visibility: hidden;
+}
+}
+
+@media all and (min-width: 250px) and (max-width: 549px) {
+  #Barre_achat{
+    display:flex;
+    justify-content: space-between;
+    width: 340px;
+  }
+/*CECI EST LE MENU HAMBURGER POUR LE RESPONSIVE*/
+  .navigation{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu_visible{
+    visibility: hidden;
+  }
+
+  #menu_hidden{
+    visibility: visible;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  a:hover
+  {
+    color: grey;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(45,45,45,0.98);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* pour arrêter le scintillement en safari*/
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+#menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.Logo_Apple{
+visibility: hidden;
+}
+
+}
+
+
+
+@media all and (min-width: 0px) and (max-width: 249px) {
+
+/*CECI EST LE MENU HAMBURGER POUR LE RESPONSIVE*/
+  .navigation{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu_visible{
+    visibility: hidden;
+  }
+
+  #menu_hidden{
+    visibility: visible;
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: #232323;
+
+    transition: color 0.3s ease;
+  }
+
+  a:hover
+  {
+    color: grey;
+  }
+
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu
+  {
+    position: absolute;
+    width: 480px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgba(45,45,45,0.98);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* pour arrêter le scintillement en safari*/
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+    color: white;
+  }
+
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+#menuToggle ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Logo_Apple{
+visibility: hidden;
+}
+}
